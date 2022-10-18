@@ -1,0 +1,18 @@
+{
+  "authors": [
+    {
+      "Title": "Anny",
+      "Category": "Gudiya",
+      "Active": "yes",
+      "Content": "content",
+      "price": 1000,
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}

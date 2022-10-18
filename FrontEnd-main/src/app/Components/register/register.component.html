@@ -1,0 +1,21 @@
+<div class="container">
+    <form formGroup="register" (ngSubmit)="registerdata(register)" class="form-box1">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter First Name"/>
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" formControlName="lname" class="form-control mb-3 mt-3" placeholder="Enter Last Name"/>
+        </div>
+
+        <div class="form-group">
+            <label>Email Id</label>
+            <input type="text" formControlName="emailId" class="form-control mb-3 mt-3" placeholder="Enter Email Id"/>
+        </div>
+
+        <br/>
+        <button type="submit" class="btn btn-success"></button>
+    </form>
+</div>

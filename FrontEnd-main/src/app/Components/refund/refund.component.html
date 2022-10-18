@@ -1,0 +1,11 @@
+<div class="col">
+    <input type="text" class="form-control" [(ngModel)] = readers.email placeholder="email" aria-label="email">
+  </div> 
+  <div class="col">
+    <input type="number" class="form-control" [(ngModel)] = readers.bId placeholder="bId" aria-label="bId">
+  </div> 
+  <button type="button" class="btn btn-success" (click)="getrefundEmailAndPayment(readers.email,readers.bId)">Find Books</button>
+
+ 
+  
+

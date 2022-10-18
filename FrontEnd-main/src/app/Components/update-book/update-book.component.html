@@ -1,0 +1,127 @@
+
+<div class="container">
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>authorName</th>
+          <th>Edit</th>
+       
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let a of authorArray">
+          
+            <td>{{a.aid}}</td>
+          <td>{{a.authorName}}</td>
+          
+     <td><button type="button" class="btn btn-success" (click)="getBookDetailsByAuthor(a.aid)">Find Books</button>
+     </td>
+         
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+           <th>Id</th>
+          <th>Logo</th>
+          <th>Title</th>
+          <th>Category</th>
+          <th>publisherName</th>
+          <th>price</th>
+
+          <th>active</th>
+            <th>edit</th>
+          
+       
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let b of booksArray; let j = index">
+          
+           <td>{{b.bid}}</td> 
+          <td>{{b.logo}}</td>
+          <td>{{b.title}}</td>
+          <td>{{b.category}}</td>
+          <td>{{b.publisherName}}</td>
+          <td>{{b.price}}</td>
+          <td>{{b.active}}</td>
+       
+     
+          <td><button type="button" class="btn btn-success" data-bs-toggle="modal" (click)="updatebook(b,b.bid)" >Edit</button></td>
+
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+ 
+
+  <div class="container">
+
+    <label>BID</label>
+     <div class="col">
+      <input type="number" class="form-control" [(ngModel)] = book.bid placeholder="bid" aria-label="bid">
+    </div> 
+<br>
+<label>Logo</label>
+<div class="col">
+  <input type="text" class="form-control" [(ngModel)] = book.logo placeholder="logo" aria-label="logo">
+</div> 
+<br>
+<label>Title</label>
+<div class="col">
+    <input type="text" class="form-control" [(ngModel)] = book.title placeholder="title" aria-label="title">
+  </div> 
+<br>
+<label>Category</label>
+  <div class="col">
+    <input type="text" class="form-control" [(ngModel)] = book.category placeholder="category" aria-label="category">
+  </div> 
+<br>
+<label>Publisher Name</label>
+  <div class="col">
+    <input type="text" class="form-control" [(ngModel)] = book.publisherName placeholder="publisherName" aria-label="publisherName">
+  </div> 
+<br>  
+<label>Chapters</label>
+  <div class="col">
+    <input type="number" class="form-control" [(ngModel)] = book.chapters placeholder="chapters" aria-label="chapters">
+  </div> 
+<br>
+<label>Active</label>
+
+  <div class="col">
+    <input type="text" class="form-control" [(ngModel)] = book.active placeholder="active" aria-label="active">
+  </div> 
+<br>
+<!-- <label>Author Name</label>
+  <div class="col">
+    <input type="text" class="form-control" [(ngModel)] = book.authorName placeholder="authorName" aria-label="authorName">
+  </div> 
+<br> -->
+<label>Price</label>
+  <div class="col">
+    <input type="number" class="form-control" [(ngModel)] = book.price placeholder="price" aria-label="price">
+  </div> 
+
+
+<br>
+
+<button type="button" class="btn btn-success" (click)="update(book)">Success</button>
+</div>
+</div>
+
+
+
+

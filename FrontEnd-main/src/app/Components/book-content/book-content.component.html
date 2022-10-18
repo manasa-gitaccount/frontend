@@ -1,0 +1,46 @@
+<div class="col">
+
+    <Span>{{title}}</Span>
+    <br>
+    <label>Email</label>
+    <input type="text" class="form-control" [(ngModel)] = readers.email placeholder="email" aria-label="email">
+  </div> 
+  <br>
+  <label>Book Id</label>
+  <div class="col">
+    <input type="number" class="form-control" [(ngModel)] = readers.bId placeholder="bId" aria-label="bId">
+  </div> 
+  <button type="button" class="btn btn-success" (click)="getBookContentByEmail(readers.email,readers.bId)">Find Books</button>
+
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+         
+    
+         
+          <th>Category</th>
+     
+
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let b of booksArray">
+          
+            
+          
+          <td>{{b.category}}</td>
+      
+          
+          
+          
+       
+     
+          
+
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>

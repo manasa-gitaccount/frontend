@@ -1,0 +1,46 @@
+<div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+         <th>BId</th>
+          <th>Logo</th>
+          <th>Title</th>
+         
+          <th>Category</th>
+          <th>authorName</th>
+          <th>price</th>
+          <th>publishedDate</th>
+          <th>publisherName</th>
+    <th>chapters</th>
+       
+          <th>active</th>
+
+          
+       
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let b of bookListArray">
+          
+           <td>{{b.bid}}</td> 
+          <td>{{b.logo}}</td>
+          <td>{{b.title}}</td>
+          <td>{{b.category}}</td>
+          <td>{{b.authorName}}</td>
+          <td>{{b.price}}</td>
+          <td>{{b.publishedDate}}</td>
+          <td>{{b.publisherName}}</td>
+          <td>{{b.chapters}}</td>
+          
+          
+          <td>{{b.active}}</td>
+       
+     
+          
+
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,86 @@
+<div class="wrapper rounded bg-white">
+
+  <div class="h3">Book Registration Form</div>
+
+  <div class="form">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>AuthorId :</label>
+        <input type="number" class="form-control" [(ngModel)]=author.aid placeholder="aid" aria-label="aId" required>
+      </div>
+      </div>
+
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Logo</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.logo placeholder="logo" aria-label="logo" required>
+        <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Title</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.title placeholder="title" aria-label="title"
+          required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Category :</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.category placeholder="category"
+          aria-label="category" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Publisher Name</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.publisherName placeholder="publisherName" aria-label="publisherName" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Published Date</label>
+        <input type="date" class="form-control" [(ngModel)]=addBooks.publishedDate placeholder="publishedDate" aria-label="publishedDate" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Chapters :</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.chapters placeholder="chapters" aria-label="chapters" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Active :</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.active placeholder="active" aria-label="active" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Active :</label>
+        <input type="text" class="form-control" [(ngModel)]=addBooks.authorName placeholder="authorName" aria-label="authorName" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <label>Active :</label>
+        <input type="number" class="form-control" [(ngModel)]=addBooks.price placeholder="price" aria-label="price" required>
+      </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-success" (click)="createBooks(addBooks,author.aid)">Success</button>
+  </div>
+
+
+
+
+
+
+

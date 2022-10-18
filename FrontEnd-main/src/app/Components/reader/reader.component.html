@@ -1,0 +1,21 @@
+ <h1></h1>
+
+    <div class="col">
+        <p>*Book ID is mandatory to buy books</p>
+    <input type="number" class="form-control" [(ngModel)] = addBooks.bid placeholder="bid"   aria-label="bid">
+</div>
+
+
+    <div class="col">
+      <input type="text" class="form-control" [(ngModel)] = readers.name placeholder="name" aria-label="name">
+    </div> 
+
+    <div class="col">
+        <input type="text" class="form-control" [(ngModel)] = readers.email placeholder="email" aria-label="email">
+      </div> 
+  
+
+<br>
+<br>
+<button type="button" class="btn btn-success" (click)="createReader(readers,bid)">Success</button>
+ 

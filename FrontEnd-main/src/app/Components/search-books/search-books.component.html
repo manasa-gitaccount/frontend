@@ -1,0 +1,63 @@
+<p>Please fill a</p>
+
+<div class="col">
+  <input type="text" class="form-control" [(ngModel)] = addBooks.publisherName placeholder="publisherName" aria-label="publisherName">
+</div> 
+
+<div class="col">
+    <input type="text" class="form-control" [(ngModel)] = addBooks.category placeholder="category" aria-label="category">
+  </div> 
+
+ 
+  <div class="col">
+    <input type="number" class="form-control" [(ngModel)] = addBooks.price placeholder="price" aria-label="price">
+  </div> 
+
+
+  <div class="col">
+    <input type="text" class="form-control" [(ngModel)] = addBooks.authorName placeholder="authorName" aria-label="authorName">
+  </div> 
+  
+  <button type="button" class="btn btn-success" (click)="searchBooksReader(addBooks.publisherName,addBooks.category,addBooks.price,addBooks.authorName)">Find Books</button>
+
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+         
+          <th>Logo</th>
+          <th>Title</th>
+          <th>Category</th>
+          <th>authorName</th>
+          <th>price</th>
+          <th>publishedDate</th>
+          <th>publisherName</th>
+          <th>active</th>
+
+          
+       
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let b of booksArray">
+          
+            
+          <td>{{b.logo}}</td>
+          <td>{{b.title}}</td>
+          <td>{{b.category}}</td>
+          <td>{{b.authorName}}</td>
+          <td>{{b.price}}</td>
+          <td>{{b.publishedDate}}</td>
+          <td>{{b.publisherName}}</td>
+          <td>{{b.active}}</td>
+       
+     
+          
+
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+

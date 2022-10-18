@@ -1,0 +1,16 @@
+<div class="wrapper rounded bg-white">
+  <div class="h2 text-center">Author Details</div>
+  <form>
+  <div class="form">
+    <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+            <label>Enter the Author Name :</label>
+            <input type="text" style="text-align: center" required class="form-control" [(ngModel)] = author.authorName placeholder="authorName" aria-label="authorName">
+        </div>
+        </div>
+        </div>
+        <br>
+
+         <button type="button" class="btn btn-success" (click)="save()">Save Author</button>
+  </form>
+</div>
